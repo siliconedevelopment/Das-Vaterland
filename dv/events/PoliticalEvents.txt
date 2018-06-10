@@ -1,0 +1,7 @@
+﻿###########################
+# Political Events
+###########################
+
+add_namespace = political
+
+#Obsolete they cause major game breaking bugs because these events did not work with our current system, have to be reworked together with advisors for the new ideologies. -Mbites

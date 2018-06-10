@@ -1,0 +1,331 @@
+#Category allowed for GXC YUN SHX XSM
+
+ ###  ##  ###   ##  #  # ###  ## ###      ## #  # ###  ###   ##  ###  ### 
+   # #  # #  # #  # ## # #   #   #       #   #  # #  # #  # #  # #  #  #  
+   # #### ###  #### # ## ##   #  ##       #  #  # ###  ###  #  # ###   #  
+#  # #  # #    #  # #  # #     # #         # #  # #    #    #  # #  #  #  
+ ##  #  # #    #  # #  # ### ##  ###     ##   ##  #    #     ##  #  #  #  
+
+CHI_seek_japanese_support = {
+
+	CHI_internal_party_support_fascism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_fascist_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 35
+
+		modifier = {
+			fascism_drift = 0.0125
+			fascist_monarchy_drift = 0.0125
+			national_socialism_drift = 0.0125
+			nationalism_drift = 0.0125
+			stability_weekly = -0.005
+			political_power_gain = -0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	CHI_aggresive_prosecution_of_opposition_fascism = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_equipment = { infantry_equipment > 499 }
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_fascist_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 0
+
+		modifier = {
+			fascism_drift = 0.025
+			fascist_monarchy_drift = 0.025
+			national_socialism_drift = 0.025
+			nationalism_drift = 0.025
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+	}
+
+	CHI_internal_party_support_communism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_communist_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 35
+
+		modifier = {
+			anarchism_drift = 0.0125
+			leninism_drift = 0.0125
+			stalinism_drift = 0.0125
+			revisionism_drift = 0.0125
+			stability_weekly = -0.005
+			political_power_gain = -0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	CHI_aggresive_prosecution_of_opposition_communism = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_equipment = { infantry_equipment > 499 }
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_communist_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 0
+
+		modifier = {
+			anarchism_drift = 0.025
+			leninism_drift = 0.025
+			revisionism_drift = 0.025
+			stalinism_drift = 0.025
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+	}
+
+	CHI_internal_party_support_neutrality = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_neutral_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 35
+
+		modifier = {
+			militarism_drift = 0.0125
+			authoritarian_drift = 0.0125
+			absolute_monarchy_drift = 0.0125
+			religious_drift = 0.0125
+			stability_weekly = -0.005
+			political_power_gain = -0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	CHI_aggresive_prosecution_of_opposition_neutrality = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_equipment = { infantry_equipment > 499 }
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_neutral_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 0
+
+		modifier = {
+			militarism_drift = 0.025
+			authoritarian_drift = 0.025
+			absolute_monarchy_drift = 0.025
+			religious_drift = 0.025
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+		}
+	}
+
+	CHI_internal_party_support_democratic = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+			JAP = { has_democratic_government = yes }
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		cost = 35
+
+		modifier = {
+			democratic_nationalism_drift = 0.005
+			authoritarian_democracy_drift = 0.005
+			reactionary_drift = 0.005
+			christian_democracy_drift = 0.005
+			conservative_drift = 0.005
+			progressive_drift = 0.005
+			social_liberal_drift = 0.005
+			market_liberal_drift = 0.005
+			social_democracy_drift = 0.005
+			democratic_socialism_drift = 0.005
+			stability_weekly = -0.005
+			political_power_gain = -0.5
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	CHI_approach_japan = {
+
+		icon = jap_pacific_guardian
+
+		available = {
+			is_subject = no
+			if = {
+				limit = { JAP = { has_fascist_government = yes } }
+				OR = {
+				fascism > 0.25
+				national_socialism > 0.25
+				nationalism > 0.25
+				fascist_monarchy > 0.25
+				}
+			}
+			if = {
+				limit = { JAP = { has_democratic_government = yes } }
+				OR = {
+				democratic_nationalism > 0.25
+				authoritarian_democracy > 0.25
+				reactionary > 0.25
+				christian_democracy > 0.25
+				conservative > 0.25
+				progressive > 0.25
+				social_liberal > 0.25
+				market_liberal > 0.25
+				social_democracy > 0.25
+				democratic_socialism > 0.25
+				}
+			}
+			if = {
+				limit = { JAP = { has_communist_government = yes } }
+				OR = {
+				stalinism > 0.25
+				leninism > 0.25
+				anarchism > 0.25
+				revisionism > 0.25
+				}
+			}
+			if = {
+				limit = { JAP = { has_neutral_government = yes } }
+				OR = {
+				authoritarian > 0.25
+				religious > 0.25
+				absolute_monarchy > 0.25
+				militarism > 0.25
+				}
+			}
+		}
+
+		visible = {
+			has_completed_focus = CHI_seek_japanese_support
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			JAP = { country_event = wtt_warlord.1 }
+			add_stability = 0.2
+			add_political_power = 100
+		}
+	}
+}
