@@ -82,70 +82,22 @@ create_import = {
 	
 	oob = "GER_1939"
 	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
+
 
 #Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
+	#create_import = {
+	#		resource = oil
+	#		factories = 2
+	#		exporter = SSU
+	#}
 
 	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_fascist_government = yes
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
 
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 0.5
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
+
 	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
 
-	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
 	set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
 
 	#BUILDINGS
 	
@@ -216,32 +168,33 @@ set_politics = {
 
 	parties = {
 		christian_democracy = { #Democratic Opposition
-			popularity = 10
+			popularity = 3
 		}
 
 		national_socialism = { #NSDAP Nazi
-			popularity = 40
+			popularity = 87
 		}
 		
 		fascism = { #NSDAP Strasser
-		popularity = 10
+		popularity = 3
 	        }
 		
 		democratic_nationalism = { #NSDAP Mahraun
-		popularity = 10
+		popularity = 3
 	        }
 		
 		social_democracy = { #Democratic Opposition
-		popularity = 20
+		popularity = 2
 	        }
 		
 		stalinism = { #Communist Opposition
-			popularity = 0
+			popularity = 1
 			banned = yes #default is no
 		}
 		
 		conservative = { #Democratic Opposition
-		popularity = 10
+		popularity = 0
+		banned = yes
 	        }
 	}
 	
@@ -252,8 +205,7 @@ set_politics = {
 
 }
 
-create_faction = Axis
-add_to_faction = GER
+
 
 
 add_ideas = {
@@ -311,19 +263,19 @@ create_country_leader = {
 #		union_man
 #	}
 #}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+
+create_country_leader = {
+	name = "Ernst Thälmann"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	expire = "1956.1.1"
+	ideology = stalinism
+	traits = {
+		assassination_survivor
+		stalins_puppet
+		political_prisoner
+	}
+}
 
 add_namespace = {
 	name = "ger_unit_leader"
@@ -354,78 +306,7 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Friedrich Paulus"
-	picture = "Portrait_Germany_Friedrich_Paulus.dds"
-	traits = { trait_cautious armor_officer }
-	skill = 1
-	id = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
 
-create_corps_commander = {
-	name = "Erwin Rommel"
-	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trickster trait_reckless war_hero armor_officer media_personality }
-	skill = 4
-	id = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Erich von Manstein"
-	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster armor_officer brilliant_strategist trait_engineer }
-	skill = 4
-	id = 5
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Heinz Guderian"
-	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
-	skill = 4
-	id = 6
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Wilhelm List"
-	picture = "Portrait_Germany_Wilhelm_List.dds"
-	traits = { career_officer inflexible_strategist }
-	skill = 2
-	id = 7
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ewald von Kleist"
-	desc = ""
-	picture = "Portrait_Germany_Ewald_von_Kleist.dds"
-	traits = { armor_officer trait_cautious }
-	skill = 2
-	id = 8
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "Fedor von Bock"
@@ -595,94 +476,6 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Sepp Dietrich"
-	picture = "Portrait_Germany_Josef_Dietrich.dds"
-	traits = { armor_officer politically_connected brilliant_strategist trait_reckless }
-	skill = 4
-	id = 24
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Hasso von Manteuffel"
-		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
-	traits = { armor_officer career_officer trait_cautious }
-	skill = 4
-	id = 25
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Albert Kesselring"
-	picture = "Portrait_Germany_Albert_Kesselring.dds"
-	traits = { brilliant_strategist trait_cautious war_hero }
-	skill = 4
-	id = 32
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Gotthard Heinrici"
-	picture = "Portrait_Germany_Gotthard_Heinrici.dds"
-	traits = { trait_engineer infantry_officer trait_cautious }
-	skill = 3
-
-	id = 33
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ernst-Eberhard Hell"
-	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
-	traits = { winter_specialist trait_engineer war_hero }
-	skill = 3
-	id = 34
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Felix Steiner"
-	gfx = "GFX_portrait_ger_felix_steiner"
-	traits = {  }
-	skill = 3
-	id = 35
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Karl Dönitz"
-		picture = "Portrait_Germany_Karl_Donitz.dds"
-	traits = { seawolf }
-	skill = 5
-	id = 26
-}
-
-create_navy_leader = {
-	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
-	traits = { blockade_runner }
-	skill = 4
-	id = 27
-}
 
 create_navy_leader = {
 	name = "Alfred Saalwächter"

@@ -1,0 +1,23 @@
+focus_tree = {
+	id = DV_SovietStalin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SSU
+		}
+	}
+	default = no
+	focus = {
+		id = SSU_second_russian_cw
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		x = 8
+		y = 1
+			completion_reward = {
+					add_manpower = 1000
+					add_war_support = 0.1
+				}
+
+	}
+}

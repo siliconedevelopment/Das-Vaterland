@@ -1,0 +1,297 @@
+focus_tree = {
+	id = DV_Germany
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = GER_FailureOfTheGermanSaxonWar
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 7
+		y = 0
+
+	}
+
+	focus = {
+		id = GER_HitlerAssassination
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10
+		prerequisite = {
+			focus = GER_FailureOfTheGermanSaxonWar
+		}
+		x = 7
+		y = 1
+			completion_reward = {
+					create_country_leader = {
+							name = "Reichstag"
+							desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = { council }
+						}
+				}
+
+	}
+	focus = {
+		id = GER_StrasseriteRevenge
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = GER_HitlerAssassination
+		}
+		mutually_exclusive = {
+			focus = StatusQuo
+			focus = Revolution
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = GER_RepublicanSpain
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = GER_StrasseriteRevenge
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+			send_equipment = {
+					equipment = infantry_equipment
+					amount = 100
+					target = SPR
+				}
+
+	}
+	focus = {
+		id = ElectOttoStrasser
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = StrasseriteRevenge
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					create_country_leader = {
+							name = "OttoStrasser"
+							desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+							expire = "1965.1.1"
+							ideology = strasserism
+							traits = { dictator }
+						}
+				}
+
+	}
+	focus = {
+		id = StatusQuo
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = HitlerAssassination
+		}
+		mutually_exclusive = {
+			focus = StrasseriteRevenge
+			focus = Revolution
+		}
+		x = 7
+		y = 2
+
+
+	}
+	focus = {
+		id = HimmlerFurFuhrer
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = StatusQuo
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					create_country_leader = {
+							name = "Heinrich Himmler"
+							desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+
+}
+						}
+				}
+
+	}
+	focus = {
+		id = StrasseriteEconomics
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = ElectOttoStrasser
+			focus = HimmlerFurFuhrer
+		}
+		mutually_exclusive = {
+			focus = Privatisation
+		}
+		x = 6
+		y = 4
+			completion_reward = {
+					set_building_level = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+				}
+
+	}
+	focus = {
+		id = GER_JoinComintern
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+
+			focus = StrasseriteEconomics
+		}
+		mutually_exclusive = {
+			focus = GER_BerlinAxis
+
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = Revolution
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		prerequisite = {
+			focus = HitlerAssassination
+		}
+		mutually_exclusive = {
+			focus = StatusQuo
+			focus = StrasseriteRevenge
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					set_politics = {
+							ruling_party = democratic_socialism
+						}
+				}
+
+	}
+	focus = {
+		id = DemocraticElections
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = Revolution
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					#country_event = {
+					#		id = german_revolution.1
+					#		hours = 24
+					#	}
+						create_country_leader = {
+							name = "Heinrich Himmler"
+							desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+							picture = "gfx/leaders/GER/Portrait_Germany_Generic_land_1.dds"
+							expire = "1965.1.1"
+							ideology = democratic_socialist
+							traits = {
+
+}
+						}
+				}
+
+	}
+	focus = {
+		id = Privatisation
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = HimmlerFurFuhrer
+			focus = DemocraticElections
+			focus = ElectOttoStrasser
+		
+		}
+		mutually_exclusive = {
+			focus = StrasseriteEconomics
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = MilitarizethePopulus
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = StrasseriteEconomics
+			focus = Privatisation
+		}
+		x = 7
+		y = 5
+			completion_reward = {
+					add_manpower = 10000
+				}
+
+	}
+	focus = {
+		id = GER_BerlinAxis
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = HimmlerFurFuhrer
+
+		}
+		prerequisite = {
+			focus = Privatisation
+
+		}
+		mutually_exclusive = {
+			focus = GER_JoinComintern
+
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					create_faction = "Berlin Axis"
+				}
+
+	}
+	focus = {
+		id = GER_RevengeSaxony
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+
+			focus = GER_JoinComintern
+		}
+		prerequisite = {
+			focus = GER_BerlinAxis
+
+		}
+		x = 7
+		y = 6
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					declare_war_on = {
+							target = SAX
+							type = puppet
+						}
+				}
+
+	}
+}
