@@ -1,6 +1,5 @@
-﻿capital = 111
-
-oob = "FIN_1936"
+﻿capital = 213
+#oob = "KAR_1936"
 
 set_research_slots = 3
 
@@ -24,18 +23,7 @@ set_convoys = 5
 add_ideas = {
 	limited_conscription
 }
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = KAR
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = KAR
-	}
-}
+
 1939.1.1 = {
 	add_political_power = 1198
 	
@@ -100,19 +88,19 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 10
+			popularity = 2
 		}
 
 		fascism = {
-			popularity = 10
+			popularity = 45
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 3
 		}
 
 		neutrality = {
-			popularity = 79
+			popularity = 50
 		}
 	}
 	
@@ -143,8 +131,8 @@ set_politics = {
 			}
 		}
 		
-		ruling_party = neutrality
-		last_election = "1939.7.1"
+		ruling_party = democratic
+		last_election = "1935.7.1"
 		election_frequency = 36
 		elections_allowed = yes
 	}

@@ -1,6 +1,6 @@
 ﻿capital = 217
 
-#oob = "SSU_1936"
+oob = "SSU_1936"
 
 set_technology = {
 	infantry_weapons = 1
@@ -27,7 +27,7 @@ declare_war_on = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	#oob = "SOV_1939"
+	oob = "SOV_1939"
 	set_technology = {
 		early_fighter = 1
 		CAS1 = 1
@@ -99,10 +99,92 @@ create_country_leader = {
 }
 
 
+create_navy_leader = {
+	name = "Arseniy Golovko"
+	id = 409
+		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
+	traits = { spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Vladimir Kasatonov"
+	id = 403
+		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
+	traits = { seawolf }
+	skill = 2
+}
 
 create_corps_commander = {
 	name = "Sardar Shah Wali Khan"
 	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
 	traits = { desert_fox }
 	skill = 4
+}
+create_corps_commander = {
+	name = "Ivan Chernyakhovsky"
+		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+
+create_corps_commander = {
+	name = "Issa Pliyev"
+		picture = "Portrait_Soviet_Issa_Pliyev.dds"
+	traits = {  }
+	skill = 1
+
+	
+}
+
+create_corps_commander = {
+	name = "Leonid Govorov"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	
+}
+
+create_field_marshal = {
+	name = "Grigory Kulik"
+		picture = "Portrait_Soviet_Grigory_Kulik.dds"
+	traits = { old_guard }
+	skill = 1	
+}
+create_field_marshal = {
+	name = "Mikhail Tukhachevsky"
+	id = 401
+		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+	traits = { offensive_doctrine defensive_doctrine inspirational_leader fortress_buster commando logistics_wizard}
+	skill = 4
+
+	
+}
+
+create_field_marshal = {
+	name = "Semyon Budyonny"
+		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
+	traits = { old_guard }
+	skill = 1
+
+	
+}
+create_corps_commander = {
+	name = "Kirill Meretskov"
+		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
+	traits = {  }
+	skill = 1
+	
+
+	
+}
+
+create_corps_commander = {
+	name = "Filipp Golikov"
+		picture = "Portrait_Soviet_Filipp_Golikov.dds"
+	traits = {  }
+	skill = 1
+	
 }

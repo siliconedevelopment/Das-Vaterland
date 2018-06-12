@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-oob = "SOV_1936"
+#oob = "SOV_1936"
 
 set_research_slots = 3
 
@@ -360,75 +360,9 @@ create_field_marshal = {
 	
 }
 
-create_field_marshal = {
-	name = "Mikhail Tukhachevsky"
-	id = 401
-		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
-	traits = { offensive_doctrine }
-	skill = 4
 
-	
-}
 
-create_field_marshal = {
-	name = "Semyon Budyonny"
-		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
-	traits = { old_guard }
-	skill = 1
 
-	
-}
-
-create_corps_commander = {
-	name = "Ivan Chernyakhovsky"
-		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
-	traits = {  }
-	skill = 1 
-
-	
-}
-
-create_corps_commander = {
-	name = "Issa Pliyev"
-		picture = "Portrait_Soviet_Issa_Pliyev.dds"
-	traits = {  }
-	skill = 1
-
-	
-}
-
-create_corps_commander = {
-	name = "Leonid Govorov"
-		picture = "Portrait_Soviet_Leonid_Govorov.dds"
-	traits = {   }
-	skill = 3
-	
-}
-
-create_field_marshal = {
-	name = "Grigory Kulik"
-		picture = "Portrait_Soviet_Grigory_Kulik.dds"
-	traits = { old_guard }
-	skill = 1	
-}
-
-create_corps_commander = {
-	name = "Kirill Meretskov"
-		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
-	traits = {  }
-	skill = 3
-	
-
-	
-}
-
-create_corps_commander = {
-	name = "Filipp Golikov"
-		picture = "Portrait_Soviet_Filipp_Golikov.dds"
-	traits = {  }
-	skill = 3
-	
-}
 
 create_corps_commander = {
 	name = "Andrey Yeryomenko"
@@ -606,21 +540,6 @@ create_navy_leader = {
 	skill = 2
 }
 
-create_navy_leader = {
-	name = "Arseniy Golovko"
-	id = 409
-		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
-	traits = { spotter }
-	skill = 4
-}
-
-create_navy_leader = {
-	name = "Vladimir Kasatonov"
-	id = 403
-		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
-	traits = { seawolf }
-	skill = 2
-}
 
 
 ### Ship Variants ###
