@@ -70,7 +70,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ElectOttoStrasser
+		id = GER_ElectOttoStrasser
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
@@ -91,7 +91,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = StatusQuo
+		id = GER_StatusQuo
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10
 		prerequisite = {
@@ -107,7 +107,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HimmlerFurFuhrer
+		id = GER_HimmlerFurFuhrer
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -130,7 +130,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = StrasseriteEconomics
+		id = GER_StrasseriteEconomics
 		icon = GFX_goal_support_communism
 		cost = 10
 		prerequisite = {
@@ -168,7 +168,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Revolution
+		id = GER_Revolution
 		icon = GFX_goal_demand_sudetenland
 		cost = 10
 		prerequisite = {
@@ -188,7 +188,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = DemocraticElections
+		id = GER_DemocraticElections
 		icon = GFX_goal_support_democracy
 		cost = 10
 		prerequisite = {
@@ -215,7 +215,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Privatisation
+		id = GER_Privatisation
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		prerequisite = {
@@ -232,7 +232,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MilitarizethePopulus
+		id = GER_MilitarizethePopulus
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {

@@ -1,8 +1,12 @@
 state={
 	id=765
 	name="STATE_765"
+	state_category = megalopolis
 	provinces={
 		13205 
+	}
+	history = {
+		owner = POL
 	}
 	manpower=383622
 	buildings_max_level_factor=1.000

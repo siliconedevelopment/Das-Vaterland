@@ -3136,10 +3136,13 @@ focus = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 2
+				factor = 14
 				any_neighbor_country = {
 					is_major = yes
 					has_communist_government = yes
+					OR = {
+						has_government = stalinism
+					}
 				}
 			}			
 			modifier = {

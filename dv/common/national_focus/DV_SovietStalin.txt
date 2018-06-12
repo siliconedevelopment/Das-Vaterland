@@ -1,23 +1,78 @@
 focus_tree = {
-	id = DV_SovietStalin
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = SSU
-		}
-	}
-	default = no
-	focus = {
-		id = SSU_second_russian_cw
-		icon = GFX_goal_generic_defence
-		cost = 0.00
-		x = 8
-		y = 1
-			completion_reward = {
-					add_manpower = 1000
-					add_war_support = 0.1
-				}
-
-	}
+id = 'DV_SovietStalin'
+country = {
+factor=0
+modifier = {
+add = 45
+tag = SSU
+}
+}
+default = no
+#Custom focuses start here
+#Focus for SSU_soviet_civil_war 
+		focus = { 
+		id = ssu_soviet_civil_war 
+		icon = GFX_goal_generic_war_with_comintern 
+		bypass = {NOT = { has_offensive_war_with = SOV } 
+ } 
+ ai_will_do = { factor = 3} 
+ x =5 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = { has_offensive_war_with = SOV } 
+ cost = 6  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ add_political_power = -50 
+ add_stability = -0.09 
+ add_manpower = 8000 
+ } 
+ }#Focus for SSU_victory_in_moscow 
+		focus = { 
+		id = ssu_victory_in_moscow 
+		icon = GFX_goal_generic_political_pressure 
+		ai_will_do = { factor = 3} 
+ x =5 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = ssu_soviet_civil_war} 
+ cost = 6  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_stability = 0.1 
+ } 
+ }#Focus for SSU_ceasefire 
+		focus = { 
+		id = ssu_ceasefire 
+		icon = GFX_goal_generic_improve_relations 
+		ai_will_do = { factor = 3} 
+ x =4 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = ssu_victory_in_moscow} 
+ available = { has_country_flag = ceasefire_sov } 
+ cost = 6  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ white_peace = SOV 
+ } 
+ }#Focus for SSU_trotsky_capitulation 
+		focus = { 
+		id = ssu_trotsky_capitulation 
+		icon = GFX_goal_generic_demand_territory 
+		ai_will_do = { factor = 3} 
+ x =6 
+ y =2 
+ mutually_exclusive = { focus = ssu_trotsky_capitulation} 
+ prerequisite = { focus = ssu_victory_in_moscow} 
+ available = { divisions_in_border_state = { state = 219 border_state = 219 size > 3 } 
+ divisions_in_border_state = { state = 408 border_state = 408 size > 3 } } 
+ cost = 6  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ create_faction= "comintern" 
+ } 
+ }#End of focuses 
 }
