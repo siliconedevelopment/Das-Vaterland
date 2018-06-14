@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "SOV"
 		default = yes
 		
 		"FRA"={
@@ -16,9 +16,7 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
+
 			}
 		}
 		"USA"={
@@ -30,9 +28,7 @@ bookmarks = {
 				undisturbed_isolation
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_strike_at_the_empire
-				USA_pearl_harbor_gambit
+
 			}
 		}
 		"ENG"={
@@ -44,9 +40,7 @@ bookmarks = {
 				george_v
 			}
 			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
+
 			}
 		}
 
@@ -60,9 +54,7 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
+
 			}
 		}
 		"GER"={
@@ -75,9 +67,7 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
+
 			}
 		}
 		"ITA"={
@@ -88,9 +78,7 @@ bookmarks = {
 				victor_emmanuel
 			}	
 			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
+
 			}		
 		}
 		"JAP"={
@@ -103,8 +91,7 @@ bookmarks = {
 			}	
 			focuses = {
 				JAP_the_zero
-				JAP_warrior_spirit
-				JAP_strike_on_the_southern_resource_area
+
 			}		
 		}
 		"SOV"={
@@ -115,9 +102,7 @@ bookmarks = {
 				home_of_revolution
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
+
 			}	
 		}
 
@@ -135,9 +120,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				POL_the_baltic_alliance
-				POL_draw_closer_to_britain
-				POL_seek_accommodation_with_germany
+
 			}
 		}
 		"CAN"={
@@ -149,9 +132,7 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
-				CAN_skewer_the_eagle
-				CAN_north_american_alliance
-				CAN_join_comintern
+
 			}
 		}
 		"AST"={
@@ -162,9 +143,7 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-				AST_never_another_gallipoli
-				AST_support_indonesian_uprising
-				AST_delegation_to_china
+
 			}
 		}
 		"NZL"={
@@ -175,9 +154,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				NZL_bob_semple_tank
-				NZL_independent_new_zealand
-				NZL_maori_volunteers
+
 			}
 		}
 		"SAF"={
@@ -189,9 +166,7 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-				SAF_secure_interests_in_africa
-				SAF_support_the_german_coup
-				SAF_anti_colonialist_crusade
+
 			}
 		}
 		"RAJ"={
@@ -203,9 +178,7 @@ bookmarks = {
 				RAJ_princely_states
 			}
 			focuses = {
-				RAJ_all_india_forward_bloc
-				RAJ_indian_gurkhas
-				RAJ_the_smiling_buddha
+
 			}
 		}
 		"CZE"={
@@ -217,9 +190,7 @@ bookmarks = {
 				CZE_divided_nation
 			}
 			focuses = {
-				CZE_sudeten_1
-				CZE_industrial_legacy
-				CZE_military_research_institute
+
 			}
 		}
 
@@ -231,9 +202,7 @@ bookmarks = {
 				HUN_treaty_of_triannon
 			}
 			focuses = {
-				HUN_proclaim_the_restoration_of_austria_hungary
-				HUN_secret_rearmament
-				HUN_renounce_the_treaty_of_trianon
+
 			}
 		}
 
@@ -246,9 +215,7 @@ bookmarks = {
 				neutrality_idea
 			}
 			focuses = {
-				ROM_balkans_dominance
-				ROM_institute_royal_dictatorship
-				ROM_preserve_greater_romania
+
 			}
 		}
 		
@@ -262,9 +229,7 @@ bookmarks = {
 				YUG_idea_serbian_general_staff
 			}
 			focuses = {
-				YUG_western_focus
-				YUG_abolish_the_monarchy
-				YUG_establish_the_banovina_of_croatia
+
 			}
 		}
 		
@@ -278,9 +243,7 @@ bookmarks = {
 				CHI_nine_power_treaty
 			}
 			focuses = {
-				CHI_united_front
-				CHI_army_reform
-				CHI_invite_the_flying_tigers
+
 			}
 		}
 		"PRC"={
@@ -293,9 +256,7 @@ bookmarks = {
 				PRC_power_struggles
 			}
 			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
+
 			}
 		}
 		"MAN"={
@@ -308,9 +269,7 @@ bookmarks = {
 				MAN_low_legitimacy_5
 			}
 			focuses = {
-				MAN_obedience
-				MAN_independence_war
-				MAN_claim_the_mandate_of_heaven
+
 			}
 		}
 		
@@ -323,9 +282,7 @@ bookmarks = {
 				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
+
 			}
 		}		
 		"YUN"={
@@ -337,9 +294,7 @@ bookmarks = {
 				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
+
 			}
 		}		
 		"SHX"={
@@ -351,9 +306,7 @@ bookmarks = {
 				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
+
 			}
 		}		
 		"XSM"={
@@ -365,9 +318,6 @@ bookmarks = {
 				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
 			}
 		}		
 		"SIK"={
@@ -379,9 +329,7 @@ bookmarks = {
 				CHI_ineffective_bureaucracy_warlord
 			}
 			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
+
 			}
 		}
 

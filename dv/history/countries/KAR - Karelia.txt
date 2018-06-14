@@ -87,26 +87,50 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 2
-		}
-
-		fascism = {
-			popularity = 45
-		}
-		
-		communism = {
-			popularity = 3
-		}
-
-		neutrality = {
-			popularity = 50
-		}
+			anarchism = { 
+				popularity = 1
+			}
+			stalinism = { 
+				popularity = 23
+			}
+			leninism = { 
+				popularity = 0
+			}
+			democratic_socialism = {
+				popularity = 0
+			}
+			social_democracy = {
+				popularity = 0
+			}
+			social_liberal = {
+				popularity = 26
+			}
+			market_liberal = {
+				popularity = 0
+			}
+			conservative = {
+				popularity = 27
+			}
+			absolute_monarchy = {
+				popularity = 1 
+			}
+			militarism = {
+				popularity = 10
+			}
+			fascism = {
+				popularity = 0
+			}
+			fascist_monarchy = {
+				popularity = 10
+			}
+			progressive = {
+				popularity = 1
+			}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = conservative
 	last_election = "1933.7.1"
-	election_frequency = 36
+	election_frequency = 67
 	elections_allowed = yes
 }
 
@@ -150,6 +174,16 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Aimo Aaltonen"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Väinö Tanner"
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"

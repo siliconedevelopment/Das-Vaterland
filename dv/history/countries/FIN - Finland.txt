@@ -28,27 +28,16 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	set_autonomy = {
-		target = KAR
-		autonomous_state = autonomy_integrated_puppet
-	}
+	puppet = KAR
 	else = {
-		puppet = KAR
+		create_faction = "Finnish Defense Alliance"
 	}
 }
 1939.1.1 = {
 	add_political_power = 1198
 	
 	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+
 	
 	oob = "FIN_1939"
 	set_technology = {
@@ -126,24 +115,48 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 10
-			}
-
-			fascism = {
-				popularity = 10
-			}
-			
-			communism = {
+			anarchism = { 
 				popularity = 1
 			}
-
-			neutrality = {
-				popularity = 79
+			stalinism = { 
+				popularity = 6
+			}
+			leninism = { 
+				popularity = 4
+			}
+			democratic_socialism = {
+				popularity = 5
+			}
+			social_democracy = {
+				popularity = 4
+			}
+			social_liberal = {
+				popularity = 40
+			}
+			market_liberal = {
+				popularity = 5
+			}
+			conservative = {
+				popularity = 15
+			}
+			absolute_monarchy = {
+				popularity = 8 
+			}
+			militarism = {
+				popularity = 6
+			}
+			fascism = {
+				popularity = 1
+			}
+			fascist_monarchy = {
+				popularity = 4
+			}
+			progressive = {
+				popularity = 1
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = conservative
 		last_election = "1939.7.1"
 		election_frequency = 36
 		elections_allowed = yes
@@ -176,12 +189,21 @@ create_country_leader = {
 	desc = "POLITICS_VILHO_ANNALA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = social_democracy
 	traits = {
 		#
 	}
 }
-
+create_country_leader = {
+	name = "Ernst von Born "
+	desc = "POLITICS_VILHO_ANNALA_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarian
+	traits = {
+		#
+	}
+}
 create_country_leader = {
 	name = "Kyösti Kallio"
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"

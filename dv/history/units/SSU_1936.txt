@@ -21,6 +21,23 @@ division_template = {
 	}
 }
 division_template = {
+	name = "Rossiyskaya Natsionalisticheskaya Armiya"			# Rifle Division
+
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+
+
+	}
+	support = {
+	
+		artillery = { x = 0 y = 0 } 		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+	}
+}
+division_template = {
 	name = "Gornostrelkovaya Diviziya"		# Mountain Rifle Division
 	division_names_group = SOV_MNT_01
 
@@ -184,19 +201,173 @@ division_template = {
 ##### OOB #####
 units = {
 	####### Severno-Zapadnoe TVD (North West Theatre Military District) (CO: ) #######				
-	division= {	# "11ya Strelkovaya Diviziya"		
+	division= {	# "11ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
 		}
 		location = 3151
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
+	division= {	# "11ya Revolyutsionnaya Armiya"		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3151
+		division_template = "Revolyutsionnaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 
+	}			
+	### Rossiyskaya Natsionalisticheskaya Armiya ###
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 60
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 166
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 6017
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 6109
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 89
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 11137
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 3086
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 127
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 18
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 3
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 10107
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Natsionalisticheskaya Armiya"
+		location = 3092
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 3168
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 70
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 11059
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 11254
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}			
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 3333
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "Rossiyskaya Natsionalisticheskaya Armiya"
+		location = 11259
+		division_template = "Rossiyskaya Natsionalisticheskaya Armiya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
 	####### Zapadnye TVD (Western Theatre Military District) (CO: Voroshilov) #######
 	##### Leningradskii Voennyii Okrug (Leningrad Military District) (CO: Meretskov) #####
 	division= {			
@@ -245,18 +416,18 @@ units = {
 			name_order = 16
 		}
 		location = 11059
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "88ya Strelkovaya Diviziya"		
+	division= {	# "88ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 88
 		}
 		location = 8
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -287,29 +458,29 @@ units = {
 			name_order = 24
 		}
 		location = 6400
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "43ya Strelkovaya Diviziya"		
+	division= {	# "43ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
 		}
 		location = 3333
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "70ya Strelkovaya Diviziya"		
+	division= {	# "70ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 70
 		}
 		location = 11474
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -322,36 +493,68 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division= {			
+		name = "3ya LVO Tankovaya Gruppa"		
+		location = 6503
+		division_template = "Tyazolaya-Tankovaya Brigada"		# 20ya TB (T-35), 40ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "4ya LVO Tankovaya Gruppa"		
+		location = 11459
+		division_template = "Tyazolaya-Tankovaya Brigada"		# 20ya TB (T-35), 40ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "6ya LVO Tankovaya Gruppa"		
+		location = 449
+		division_template = "Tyazolaya-Tankovaya Brigada"		# 20ya TB (T-35), 40ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {			
+		name = "7ya LVO Tankovaya Gruppa"		
+		location = 6516
+		division_template = "Tyazolaya-Tankovaya Brigada"		# 20ya TB (T-35), 40ya TB (T-26)
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
 	# 50ya Strelkovyi Korpus (CO: ) #	
-	division= {	# "49ya Strelkovaya Diviziya"		
+	division= {	# "49ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 49
 		}
 		location = 9459
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "90ya Strelkovaya Diviziya"		
+	division= {	# "90ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 90
 		}
 		location = 6575
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "142ya Strelkovaya Diviziya"		
+	division= {	# "142ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 142
 		}
 		location = 11501
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -367,36 +570,36 @@ units = {
 
 	### 8ya Armiya (CO: Khabarov) ###		
 	# 1ya Strelkovyi Korpus	(CO: ) #		
-	division= {	# "75ya Strelkovaya Diviziya"		
+	division= {	# "75ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 75
 		}
 		location = 11485
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "155ya Strelkovaya Diviziya"		
+	division= {	# "155ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 155
 		}
 		location = 3317
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	# 56ya Strelkovyi Korpus (CO: ) #		
-	division= {	# "18ya Strelkovaya Diviziya"		
+	division= {	# "18ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 18
 		}
 		location = 3475
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -407,18 +610,18 @@ units = {
 			name_order = 56
 		}
 		location = 3722
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "168ya Strelkovaya Diviziya"		
+	division= {	# "168ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 168
 		}
 		location = 11649
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -432,41 +635,41 @@ units = {
 			name_order = 14
 		}
 		location = 705
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "163ya Strelkovaya Diviziya"		
+	division= {	# "163ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 163
 		}
 		location = 3686
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	# Kareliya Osbogo Korpus (CO: ) #		
-	division= {	# "54ya Strelkovaya Diviziya"		
+	division= {	# "54ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 54
 		}
 		location = 6704
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "104ya Strelkovaya Diviziya"		
+	division= {	# "104ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 104
 		}
 		location = 9677
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -518,35 +721,35 @@ units = {
 	}			
 
 
-	division= {	# "89ya Strelkovaya Diviziya"		
+	division= {	# "89ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 89
 		}
 		location = 3686
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "115ya Strelkovaya Diviziya"		
+	division= {	# "115ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 115
 		}
 		location = 6771
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "164ya Strelkovaya Diviziya"		
+	division= {	# "164ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 164
 		}
 		location = 705
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -558,18 +761,18 @@ units = {
 			name_order = 55
 		}
 		location = 11683
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "143ya Strelkovaya Diviziya"		
+	division= {	# "143ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 143
 		}
 		location = 6233
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -593,35 +796,35 @@ units = {
 
 	}
 	# 51ya Strelkovyi Korpus (CO: ) #	
-	division= {	# "85ya Strelkovaya Diviziya"		
+	division= {	# "85ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 85
 		}
 		location = 11241
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}			
-	division= {	# "98ya Strelkovaya Diviziya"		
+	division= {	# "98ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 98
 		}
 		location = 11241
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "112ya Strelkovaya Diviziya"		
+	division= {	# "112ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 112
 		}
 		location = 11241
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -636,18 +839,18 @@ units = {
 			name_order = 96
 		}
 		location = 3470
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "97ya Strelkovaya Diviziya"		
+	division= {	# "97ya Revolyutsionnaya Armiya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 97
 		}
 		location = 3470
-		division_template = "Strelkovaya Diviziya"
+		division_template = "Revolyutsionnaya Armiya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 

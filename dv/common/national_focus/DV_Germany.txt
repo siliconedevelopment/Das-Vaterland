@@ -32,7 +32,9 @@ focus_tree = {
 							desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 							expire = "1965.1.1"
 							ideology = nazism
-							traits = { council }
+							traits = { 
+								council 
+							}
 						}
 				}
 
@@ -45,8 +47,8 @@ focus_tree = {
 			focus = GER_HitlerAssassination
 		}
 		mutually_exclusive = {
-			focus = StatusQuo
-			focus = Revolution
+			focus = GER_StatusQuo
+			focus = GER_Revolution
 		}
 		x = 5
 		y = 2
@@ -67,14 +69,14 @@ focus_tree = {
 					amount = 100
 					target = SPR
 				}
-
+		}
 	}
 	focus = {
 		id = GER_ElectOttoStrasser
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
-			focus = StrasseriteRevenge
+			focus = GER_StrasseriteRevenge
 		}
 		x = 5
 		y = 3
@@ -95,11 +97,11 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10
 		prerequisite = {
-			focus = HitlerAssassination
+			focus = GER_HitlerAssassination
 		}
 		mutually_exclusive = {
-			focus = StrasseriteRevenge
-			focus = Revolution
+			focus = GER_StrasseriteRevenge
+			focus = GER_Revolution
 		}
 		x = 7
 		y = 2
@@ -111,7 +113,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = StatusQuo
+			focus = GER_StatusQuo
 		}
 		x = 7
 		y = 3
@@ -134,11 +136,11 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		cost = 10
 		prerequisite = {
-			focus = ElectOttoStrasser
-			focus = HimmlerFurFuhrer
+			focus = GER_ElectOttoStrasser
+			focus = GER_HimmlerFurFuhrer
 		}
 		mutually_exclusive = {
-			focus = Privatisation
+			focus = GER_Privatisation
 		}
 		x = 6
 		y = 4
@@ -156,8 +158,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 7.00
 		prerequisite = {
-
-			focus = StrasseriteEconomics
+			focus = GER_StrasseriteEconomics
 		}
 		mutually_exclusive = {
 			focus = GER_BerlinAxis
@@ -175,8 +176,8 @@ focus_tree = {
 			focus = HitlerAssassination
 		}
 		mutually_exclusive = {
-			focus = StatusQuo
-			focus = StrasseriteRevenge
+			focus = GER_StatusQuo
+			focus = GER_StrasseriteRevenge
 		}
 		x = 9
 		y = 2
@@ -192,7 +193,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		cost = 10
 		prerequisite = {
-			focus = Revolution
+			focus = GER_Revolution
 		}
 		x = 9
 		y = 3
@@ -219,13 +220,13 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		prerequisite = {
-			focus = HimmlerFurFuhrer
-			focus = DemocraticElections
-			focus = ElectOttoStrasser
+			focus = GER_HimmlerFurFuhrer
+			focus = GER_DemocraticElections
+			focus = GER_ElectOttoStrasser
 		
 		}
 		mutually_exclusive = {
-			focus = StrasseriteEconomics
+			focus = GER_StrasseriteEconomics
 		}
 		x = 8
 		y = 4
@@ -236,8 +237,8 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
-			focus = StrasseriteEconomics
-			focus = Privatisation
+			focus = GER_StrasseriteEconomics
+			focus = GER_Privatisation
 		}
 		x = 7
 		y = 5
@@ -251,11 +252,11 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		cost = 10
 		prerequisite = {
-			focus = HimmlerFurFuhrer
+			focus = GER_HimmlerFurFuhrer
 
 		}
 		prerequisite = {
-			focus = Privatisation
+			focus = GER_Privatisation
 
 		}
 		mutually_exclusive = {
@@ -274,7 +275,6 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-
 			focus = GER_JoinComintern
 		}
 		prerequisite = {
